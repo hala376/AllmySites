@@ -30,7 +30,11 @@ header{
 
 
 nav{
-    margin-top: 15px;
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     border-bottom: 1px solid black;
     
 }
@@ -42,6 +46,10 @@ nav a{
     box-shadow: 0 0 5px black;
     border-radius: 15px;
    background-color: rgba(255, 255, 255, 0.455);
+}
+
+nav a:nth-child(2n) {
+    background-color: rgba(255, 100, 100, 0.455);
 }
 
 nav a:hover{
@@ -70,6 +78,7 @@ main {
     border-radius: 15px;
    background-color: rgba(255, 255, 255, 0.455);
    width: 60dvw;
+   min-height: 100dvh;
 }
 
 
@@ -91,15 +100,24 @@ height: 80%;
   object-fit: cover;
 }
 
+
+/* alla sektions i classen .row */
 .row section{
     flex: 1;
 }
 
 
+/* en section med bilder klassen imgs. ligger på rad, bredd 35% */
 .imgs {
     display: flex;
     flex-direction: row;
     width: 35%;
+}
+
+
+.platser .imgs {
+    
+    flex-direction: column;
 }
 
 .imgs img {
@@ -109,3 +127,19 @@ height: 80%;
     height: 50dvh;
 } 
 
+.platser  {
+    display: flex;
+    flex-direction: row;
+}
+
+.platser section {
+    flex: 1;
+}
+
+.platser section:nth-child(2n-1) {
+    border-radius: 20%;
+}
+
+footer {
+    
+}
