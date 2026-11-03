@@ -21,7 +21,7 @@ header{
   font-style: normal;
    padding:20px;
   border-radius: 15px;
-   background-color: rgba(255, 255, 255, 0.455);
+   background-color: rgba(58, 164, 23, 0.547);
 
   
     
@@ -45,7 +45,7 @@ nav a{
     padding: 10px;
     box-shadow: 0 0 5px black;
     border-radius: 15px;
-   background-color: rgba(255, 255, 255, 0.455);
+   background-color: rgba(146, 87, 168, 0.455);
 }
 
 nav a:nth-child(2n) {
@@ -67,7 +67,7 @@ h3 {
 
 .subHead{
     font-size: 25px;
-    color: rgb(125, 121, 121);
+    color: rgb(157, 37, 37);
 }
 
 .max{
@@ -85,7 +85,7 @@ main {
 main section {
     display:flex;
     flex-direction: column; 
-    align-items: start;
+    align-items: center;
 }
 
 
@@ -140,6 +140,5 @@ height: 80%;
     border-radius: 20%;
 }
 
-footer {
-    
-}
+
+
